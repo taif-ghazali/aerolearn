@@ -1209,7 +1209,7 @@ body::before {
             <div class="home-features">
                 <div class="feature-badge">
                     <i data-lucide="play-circle"></i>
-                    <span>Animated Videos</span>
+                    <span>Animations</span>
                 </div>
                 <div class="feature-badge">
                     <i data-lucide="file-text"></i>
@@ -1380,11 +1380,15 @@ const courseData = [
     },
     {
         id: "parts-of-plane",
-        animationType: "blueprint",
         title: "Parts of a Plane",
-        hasVideo: true,
-        videoPlaceholder: "parts_poster.png",
+        hasVideo: false,
         textContent: `
+            <iframe 
+                src="components/aerolearn_airplane_parts.html"
+                style="width:100%; height:520px; border:none;">
+            </iframe>
+
+
             <h2>Parts of a Plane</h2>
             <p>The design of an airplane is a masterclass in structural engineering and fluid dynamics. Every part is meticulously engineered to manage the four fundamental forces of flight: <span class="physics-term" data-definition="Upward force acting on the aircraft.">lift</span>, <span class="physics-term" data-definition="Downward force caused by gravity.">weight</span>, <span class="physics-term" data-definition="Forward force produced by the powerplant.">thrust</span>, and <span class="physics-term" data-definition="Backward force caused by air resistance.">drag</span>.</p>
 
@@ -1589,11 +1593,6 @@ window.courseData.push(
         title: "Aircraft Components",
         hasVideo: false,
         textContent: `
-            <iframe 
-                src="components/aerolearn_airplane_parts.html"
-                style="width:100%; height:520px; border:none;">
-            </iframe>
-
 
             <h2>Systems Architecture & Deep Integration</h2>
             <p>To understand an aircraft deeply, we must move beyond viewing it as a mere "collection of parts" and analyze it through the lens of <strong>Hierarchical Systems Architecture</strong>. A modern airliner is essentially a flying data center wrapped in <span class="physics-term" data-definition="Lightweight, high-strength metals resistant to extreme temperatures and corrosion.">Aerospace-Grade Titanium</span> and <span class="physics-term" data-definition="Materials made from two or more constituent materials with significantly different physical or chemical properties.">Carbon-Fiber Composites</span>.</p>
